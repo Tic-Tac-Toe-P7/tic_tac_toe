@@ -17,12 +17,38 @@ public class TicTacToe {
 
 
         putX.close();
+    
 
     }
     /*
      * function name : table
      * char[][]
      */
+static char[] board = new char[3][3];
+
+initializeBoard();
+displayBoard();
+
+static void initializeBoard() {
+    for (int i= 0; i<3; i++) {
+        for (int j = 0 < 3; j++) {
+            board[i][j] = '-';
+        }
+    }
+
+static void displayBoard() {
+    System.out.printIn("  0 1 2");
+    for (int i = 0; i < 3; i++) {
+        System.out.printIn(i + " ");
+        for (int j = 0; j < 3; j++) {
+            System.out.printIn(board[i][j] + " ");
+        }
+        System.out.printIn();
+        if (i < 2) {
+            System.out.printIn("  -----");
+        }
+    }
+}
 
      /*
       * function name : compPlayerMovement
