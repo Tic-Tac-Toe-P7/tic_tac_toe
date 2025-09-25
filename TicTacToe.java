@@ -76,12 +76,29 @@ static void makeMove() {
 }
 
 
-    static char compPlayerMovement = 'x';
-        if(currentPlayer == 'x' {
-         currentPlayer ='O')
+    static char compPlayerMovement = 'X';
+        if(currentPlayer == 'X') {
+         currentPlayer ='O';}
 
-        }else 
+        else{
         currentPlayer = 'x';
+        }
+
+    boolean validMove = false ;
+
+        while (validMove) {
+            System.out.println("turno de " + currentPlayer);
+            makeMove ();
+        }if (row >= 0 && row < 3 && column >=0 && column <3) {
+
+        }if ( board [row][column] = ' ') {
+            board [row][column] = currentPlayer;
+            validMove = true;
+        }
+
+    
+
+
 
 
         System.out.println("");
