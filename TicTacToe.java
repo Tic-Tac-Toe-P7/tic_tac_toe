@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class TicTacToe {
     private static final char PLAYER_X = 'X';
-    private static final char PLAYER_O = 'O';
     
     private static char[][] board = new char[3][3];
     private static char currentPlayer = PLAYER_X;
@@ -15,9 +14,6 @@ public class TicTacToe {
         displayBoard();
         
         while (true) {
-            System.out.println("Te toca: " + currentPlayer);
-            System.out.print("Escribe fila y columna: ");
-            String rowCol = putX.nextLine();
             
             makeMove();
             displayBoard();
@@ -86,4 +82,20 @@ public class TicTacToe {
             currentPlayer = 'X';
         }
     }
+    
+   
+    static boolean checkWin(){
+        
+        for (int i = 0; i < 3; i++) {
+            if(board[i][0] != '-' && 
+        board[i][0] == board[i][1] && 
+        board[i][1] == board[i][2]) {
+        return true;
+        }
+        
+    }
+    return false;
+
+
+}
 }
