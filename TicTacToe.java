@@ -4,17 +4,24 @@ public class TicTacToe {
     public static void main(String[] args){
         Scanner putX = new Scanner(System.in);
 
+    private static final char PLAYER_X = 'X';
+    private static final char PLAYER_O = 'O';
+
         System.out.println("Binevenido!");
-        table
-        System.out.println("te toca: X");
+
+       while(){
+        System.out.println("te toca: " + player);
         System.out.print("escribe fila y columna: ");
+        String rowCol = putX.nextLine();  
+        
+        displayBoard();
 
         
 
 
 
 
-
+    }
 
         putX.close();
     
@@ -68,6 +75,11 @@ static void displayBoard() {
 
       /*
        * function name : winPattern
+       * 123
+       * 456
+       * 789
+       * 
        */
+
 
 }
