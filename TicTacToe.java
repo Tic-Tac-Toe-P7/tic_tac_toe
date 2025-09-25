@@ -62,14 +62,30 @@ static void displayBoard() {
       *(math.random)
       */
 
+static void makeMove() {
+    //de quien es el turno
+    System.out.printIn("Turno de"+ currentPlayer );
+    //que el jugador introduzca la fila y la columna
+    System.out.print("Introduce en la fila (0-2): ");
+    int row = putX.nextInt();
+    System.out.print("Introduce en la columna (0-2): ");
+    int col = putX.nextInt();
+
+    //colocar la marca
+    board[row][col] = currentPlayer;
+}
+
+
     static char compPlayerMovement = 'x';
-        if(compPlayerMovement = 'x' && 'o'){
+        if(currentPlayer == 'x' {
+         currentPlayer ='O')
 
         }else 
+        currentPlayer = 'x';
 
 
         System.out.println("");
-    
+}
 
 
 
