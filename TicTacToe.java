@@ -96,12 +96,25 @@ static void makeMove() {
             validMove = true;
         }
 
-    
+        // cambiar de jugador otra vez
+        if(currentPlayer=='X')
+        {
+            currentPlayer = 'O';
+        }else
+        {
+            currentPlayer = 'X';
+        }
 
+        // mensajes de error
+    }else{System.out.println("Esa celda ya está ocupada! Prueba con otra.");}
+    }else{System.out.println("Posición inválida! Usa un número entre el 0 y el 2.");
+
+    }}}
 
 
 
         System.out.println("");
+
 }
 
 
