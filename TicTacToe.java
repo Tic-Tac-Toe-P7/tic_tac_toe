@@ -55,6 +55,17 @@ static void displayBoard() {
       *(math.random)
       */
 
+    static char compPlayerMovement = 'x';
+        if(compPlayerMovement = 'x' && 'o'){
+
+        }else 
+
+
+        System.out.println("");
+    
+
+
+
       /*
        * function name : winPattern
        */
