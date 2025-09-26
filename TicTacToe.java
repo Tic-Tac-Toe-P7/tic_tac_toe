@@ -21,13 +21,13 @@ public class TicTacToe {
             
             // Comprobar si hay ganador
             if (checkWinner()) {
-                System.out.println("🎉 ¡Felicidades! El jugador " + playerBeforeMove + " ha ganado! 🎉");
+                System.out.println("¡Felicidades! El jugador " + playerBeforeMove + " ha ganado!");
                 break;
             }
             
             // Comprobar si hay empate
             if (isBoardFull()) {
-                System.out.println("🤝 ¡Es un empate! El tablero está lleno. 🤝");
+                System.out.println("¡Es un empate! El tablero está lleno.");
                 break;
             }
         }
